@@ -1,29 +1,194 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendendo Branch com o john</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaTech | Soluções Digitais</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <div>
-            <img src="" alt="">
-            <h1>Ola seja bem vindo!</h1>
-        </div>
-        <ul>
-            <li>inicio</li>
-            <li>meio</li>
-            <li>fim</li>
-        </ul>
-    </header>
-    <div class="container">
-
+ 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand text-primary" href="#">NovaTech</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+      <a href="#contato" class="btn btn-gradient ms-lg-4 mt-3 mt-lg-0">Começar agora</a>
     </div>
-    <footer></footer>
+  </div>
+</nav>
+ 
+<!-- Hero -->
+<header class="hero text-center">
+  <div class="container">
+    <span class="badge bg-light text-primary mb-3 px-3 py-2 rounded-pill">🚀 Novidade por aqui</span>
+    <h1 class="display-4 mb-4">Construa produtos digitais incríveis</h1>
+    <p class="lead mb-5 col-lg-7 mx-auto">
+      Uma landing page simples, feita com HTML, CSS e Bootstrap, pronta para você
+      clonar, editar e praticar seus commits no GitHub.
+    </p>
+    <a href="#planos" class="btn btn-light btn-lg px-4 me-2">Ver planos</a>
+    <a href="#recursos" class="btn btn-outline-light btn-lg px-4">Saiba mais</a>
+  </div>
+</header>
+ 
+<!-- Recursos -->
+<section id="recursos" class="py-5 my-5">
+  <div class="container text-center">
+    <h2 class="section-title">Recursos principais</h2>
+    <p class="section-subtitle">Tudo que você precisa para começar rápido</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card-custom text-start">
+          <div class="feature-icon">⚡</div>
+          <h5>Rápido de configurar</h5>
+          <p class="text-muted mb-0">Estrutura simples em HTML e CSS, fácil de entender e modificar.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom text-start">
+          <div class="feature-icon">🎨</div>
+          <h5>Design responsivo</h5>
+          <p class="text-muted mb-0">Construído com Bootstrap 5, se adapta a qualquer tamanho de tela.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom text-start">
+          <div class="feature-icon">🔧</div>
+          <h5>Fácil de versionar</h5>
+          <p class="text-muted mb-0">Perfeito para praticar Git: branches, commits e pull requests.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Planos -->
+<section id="planos" class="py-5 bg-light">
+  <div class="container text-center py-5">
+    <h2 class="section-title">Planos</h2>
+    <p class="section-subtitle">Escolha o que faz mais sentido pra você</p>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="price-card">
+          <h6 class="text-uppercase text-muted">Básico</h6>
+          <h2 class="my-3">R$ 0<span class="fs-6 text-muted">/mês</span></h2>
+          <p class="text-muted">Ideal para começar e testar a ideia.</p>
+          <ul class="list-unstyled text-start mb-4">
+            <li>✔️ 1 projeto</li>
+            <li>✔️ Suporte pela comunidade</li>
+            <li>✔️ Atualizações básicas</li>
+          </ul>
+          <a href="#" class="btn btn-outline-primary w-100">Escolher</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="price-card featured">
+          <span class="badge bg-primary mb-2">Mais popular</span>
+          <h6 class="text-uppercase text-muted">Pro</h6>
+          <h2 class="my-3">R$ 29<span class="fs-6 text-muted">/mês</span></h2>
+          <p class="text-muted">Para quem quer ir além no aprendizado.</p>
+          <ul class="list-unstyled text-start mb-4">
+            <li>✔️ Projetos ilimitados</li>
+            <li>✔️ Suporte prioritário</li>
+            <li>✔️ Recursos avançados</li>
+          </ul>
+          <a href="#" class="btn btn-gradient w-100">Escolher</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="price-card">
+          <h6 class="text-uppercase text-muted">Empresarial</h6>
+          <h2 class="my-3">R$ 99<span class="fs-6 text-muted">/mês</span></h2>
+          <p class="text-muted">Para times e projetos maiores.</p>
+          <ul class="list-unstyled text-start mb-4">
+            <li>✔️ Tudo do Pro</li>
+            <li>✔️ Suporte dedicado</li>
+            <li>✔️ Integrações customizadas</li>
+          </ul>
+          <a href="#" class="btn btn-outline-primary w-100">Escolher</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Sobre -->
+<section id="sobre" class="py-5 my-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <h2 class="section-title">Sobre este projeto</h2>
+        <p class="text-muted">
+          Esta página foi criada como base de estudo: HTML puro, CSS customizado
+          e o framework Bootstrap para componentes prontos e responsividade.
+          Use-a para praticar Git — crie um repositório, faça commits, abra branches,
+          teste pull requests e sinta-se à vontade para editar tudo.
+        </p>
+        <a href="#contato" class="btn btn-gradient mt-2">Falar com a gente</a>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-custom">
+          <h5 class="mb-3">Ideias para praticar Git 🐙</h5>
+          <ul class="text-muted">
+            <li>Criar um repositório novo e subir este código</li>
+            <li>Criar uma branch <code>feature/cores</code> e mudar o esquema de cores</li>
+            <li>Abrir um Pull Request e escrever uma boa descrição</li>
+            <li>Adicionar uma seção de depoimentos</li>
+            <li>Publicar com GitHub Pages</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Contato -->
+<section id="contato" class="py-5 bg-light">
+  <div class="container text-center py-5">
+    <h2 class="section-title">Vamos conversar?</h2>
+    <p class="section-subtitle">Preencha o formulário e entraremos em contato</p>
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <form>
+          <div class="mb-3 text-start">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-control" placeholder="Seu nome">
+          </div>
+          <div class="mb-3 text-start">
+            <label class="form-label">E-mail</label>
+            <input type="email" class="form-control" placeholder="seu@email.com">
+          </div>
+          <div class="mb-3 text-start">
+            <label class="form-label">Mensagem</label>
+            <textarea class="form-control" rows="4" placeholder="Sua mensagem"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gradient w-100">Enviar mensagem</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p class="mb-1">© 2026 NovaTech — Projeto de estudo</p>
+    <p class="mb-0 small">Feito com HTML, CSS e Bootstrap 5</p>
+  </div>
+</footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
