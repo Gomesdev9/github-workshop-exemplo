@@ -4,12 +4,38 @@
     box-sizing: border-box;
 }
 
-body{
+.container{
     width: 100vw;
     height: 100vh;
     background-color: black;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: #FFF;
     text-align: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3;
+    background-color: #fFF;
+    
+    .h1{
+        color: black;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        padding: 8px;
+        justify-content: center;
+        align-items: end;
+        li{
+            list-style-type: none;
+            padding: 8px;
+        }
+    }
+
 }
