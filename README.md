@@ -10,7 +10,3 @@ básico de GitHub Actions.
 1. Faça um fork deste repositório
 2. Clone o seu fork localmente
 3. Siga o roteiro passado em aula (branch → commit → push → PR)
-
-## Estrutura
-- `CONTRIBUTORS.md` — cada aluno adiciona seu nome aqui via PR
-- `.github/workflows/ci.yml` — workflow de exemplo usado na parte de Actions
